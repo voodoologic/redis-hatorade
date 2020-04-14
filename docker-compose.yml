@@ -14,7 +14,7 @@ services:
     ports:
       - 6379:6379
     volumes:
-      - redis_files:/var/lib/redis
+      - redis_files:/var/lib/redis:rw
     networks:
       redis_network:
 networks:
