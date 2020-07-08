@@ -11,8 +11,8 @@ services:
     env_file:
       - ../.env_redis
     restart: always
-    ports:
-      - 6379:6379
+    expose:
+      - 6379
     volumes:
       - redis_files:/var/lib/redis:rw
     networks:
